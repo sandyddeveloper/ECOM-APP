@@ -8,6 +8,9 @@ dotenv.config();
 const port = process.env.PORT;
 const app = express();
 
+//middle Ware 
+app.use(express.json());
+
  //import routes
  import router from "./routes/user.js";
 

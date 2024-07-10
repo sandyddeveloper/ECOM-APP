@@ -1,11 +1,12 @@
-import {createTrasport} from "nodemailer";
+import { createTransport } from 'nodemailer';
+
 
 const sendMail = async (email, subject, text) =>{
 
     // config
 
-const Trasport = createTrasport({
-    host : "smpt.gmail.com",
+const Trasport = createTransport({
+    host : "smtp.gmail.com",
     port: 465,
     auth: {
         user : process.env.GMAIL,
