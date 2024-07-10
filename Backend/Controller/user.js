@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 import jws from "jsonwebtoken";
 import sendMail from "../middleware/sendmail";
 
-export const RegistrationUser = async (req, res) =>{
+const RegistrationUser = async (req, res) =>{
     try {
         // code to check email already exits or not
         const {email, password, contact, name, } = req.body;
@@ -42,3 +42,6 @@ export const RegistrationUser = async (req, res) =>{
 
 
 };
+
+
+export default RegistrationUser;
