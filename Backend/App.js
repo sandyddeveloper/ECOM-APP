@@ -15,10 +15,10 @@ app.use(express.json());
  import router from "./routes/user.js";
 
  //Use route
-app.use("/api/", router)
+app.use("/api/", router);
 
 app.get("/",(req, res) =>{
-    res.send("hello world")
+    res.send("hello world");
 })
 app.listen(port, () =>{
     console.log(`the server is runner in  ${port}`);
